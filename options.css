@@ -1,0 +1,114 @@
+/* 
+Copyright (C) 2023 awadatekon
+SPDX-License-Identifier: GPL-3.0-or-later
+*/
+
+]
+.container {
+    max-width: 800px;
+}
+
+#websiteInfo,
+#customCopyStyles {
+    margin-bottom: 2rem;
+}
+
+.website-info-item,
+.custom-copy-style-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #dbdbdb;
+}
+
+.website-info-item:last-child,
+.custom-copy-style-item:last-child {
+    margin-bottom: 0;
+}
+
+.website-info-item label,
+.custom-copy-style-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.website-url,
+.custom-copy-style-name-input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.elements-container {
+    margin-bottom: 1rem;
+}
+
+.element-input-container {
+   
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.element-input-container:last-child {
+    margin-bottom: 0;
+}
+
+.element-order-input,
+.element-key-input,
+.element-input {
+    flex: 1;
+    margin-right: 0.5rem;
+}
+
+.element-order-input {
+    width: 3rem;
+}
+
+.element-key-input {
+    flex: 3;
+}
+
+.element-input {
+    flex: 6;
+}
+
+.button {
+    margin-right: 0.5rem;
+}
+
+#importFile {
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .element-input-container {
+        flex-wrap: wrap;
+    }
+
+    .element-order-input {
+        margin-right: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .element-key-input,
+    .element-input {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+#customCopyStyles {
+    margin-bottom: 2rem;
+}
+
+.custom-copy-style-template-input {
+    width: 100%;
+    padding: 0.5rem;
+    height: 3rem;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+
+.level {
+    margin-bottom: 1rem;
+}

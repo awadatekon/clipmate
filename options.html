@@ -1,0 +1,72 @@
+<!-- 
+  Copyright (C) 2023 awadatekon
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Website Configuration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="level">
+                <div class="level-left">
+                    <h1 class="title">設定ページ</h1>
+                </div>
+                <div class="level-right">
+                    <div class="buttons">
+                        <button id="importButton" class="button is-info">設定をインポート</button>
+                        <input type="file" id="importFile" accept=".json" style="display:none">
+                        <button id="exportButton" class="button is-info">設定をエクスポート</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="tabs">
+                <ul>
+                    <li class="is-active" id="tab-website-configuration"><a>サイトとXPath</a></li>
+                    <li id="tab-custom-copy-styles"><a>カスタムスタイル</a></li>
+                </ul>
+            </nav>
+            <div class="notification is-info is-light">
+                一番下の保存ボタンで保存できます。
+            </div>
+            <div id="website-info-section">
+                <!-- <h2 class="subtitle">サイトとXPathの設定</h2> -->
+
+                <div id="websiteInfo"></div>
+                <div class="buttons">
+                    <button id="addWebsiteButton" class="button is-primary is-light">
+                        ウェブサイトの設定を追加
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button id="saveButton" class="button is-primary">ウェブサイトの設定を保存する</button>
+                </div>
+            </div>
+
+            <div id="custom-copy-styles-section" style="display:none;">
+                <!-- <h2 class="subtitle">カスタムスタイルの設定</h2> -->
+                <div id="customCopyStyles"></div>
+                <div class="buttons">
+                    <button id="addCustomCopyStyleButton" class="button is-primary is-light">
+                        カスタムスタイルを追加する
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button id="saveCustomCopyStylesButton" class="button is-primary">カスタムスタイルの設定を保存する</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="options.js"></script>
+</body>
+
+</html>

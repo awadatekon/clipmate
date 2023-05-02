@@ -1,0 +1,120 @@
+<!-- 
+  Copyright (C) 2023 awadatekon
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Settings</title>
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #ccc;
+      /* padding: 10px; */
+      /* margin: /0px -40px 10px -40px; */
+    }
+
+    .main {
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .settings-icon-container {
+      margin-right: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    body {
+      width: 300px;
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      padding: 20px, 20px, 20px, 20px;
+      margin: 0px;
+    }
+
+    h1 {
+      font-size: 20px;
+      /* font-weight: bold; */
+      margin: 10px 5px 5px 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    select {
+      display: block;
+      margin: 10px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #fff;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    button {
+      display: block;
+      margin: 10px;
+      padding: 10px 20px;
+      width: 100%;
+      border: none;
+      border-radius: .375em;
+      background-color: #00d1b2;
+      color: #fff;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00c4a7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">ClipMate with XPath</h1>
+    <div class="settings-icon-container" id="settingsIcon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-settings">
+        <circle cx="12" cy="12" r="3"></circle>
+        <!-- 歯車アイコン -->
+        <path
+          d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06c.46.46 1.1.69 1.82.33a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 1.82-.33 1.65 1.65 0 0 0 1.82.33l.06.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82 1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+        </path>
+      </svg>
+    </div>
+  </div>
+  <div class="main">
+    <!-- <label for="copyStyle">Copy Style:</label> -->
+    <select id="copyStyle">
+      <option value="new-line">New Line</option>
+      <option value="tab">Tab</option>
+      <option value="json">JSON</option>
+      <option value="csv">CSV</option>
+    </select>
+    <button id="copyButton">Copy</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
