@@ -2,7 +2,8 @@
 任意のウェブサイトにおいて，XPath で指定した要素のテキストを指定した形式でクリップボードにコピーする Chrome 拡張機能です。
 
 ## インストール
-Chrome Web Store
+[![Available in the Chrome](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png
+)](https://chromewebstore.google.com/detail/clipmate-with-xpath/ejelddbcnafpclfkbpaegddgklpaahki?)
 
 ## 使い方
 ### サイトの設定を行う
